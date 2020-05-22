@@ -1,0 +1,21 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#profile{
+    max-width: 30%;
+    float: left;
+}
+header h1{
+    text-align: center;
+}
+
+#deployments{
+    padding: 20%;
+    float: left;
+}
+
+.contact-info{
+    padding: 20%;
+    float: left;
+}
