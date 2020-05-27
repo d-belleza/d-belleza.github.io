@@ -200,3 +200,73 @@ main{
     padding-bottom: 10px;
     border-bottom: 3px solid;
 }
+
+/*MEDIA QUERIES*/
+
+/*Small Desktop and smaller*/
+@media screen and (max-width: 980px){
+    header{
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1{
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul{
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a{
+        font-size: 20px;
+    }
+
+    .bio-img{
+        margin-left: 10%;
+        width: 38%;
+    }
+
+    .bio-text{
+        margin-left: 2%;
+    }
+}
+
+/*Tablet and smaller*/
+@media screen and (max-width: 768px){
+    .bio{
+        display: block;
+        margin: 0;
+    }
+
+    .bio-img{
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .bio-text{
+        margin: 5% auto;
+        width: 100%;
+    }
+
+    .bio-text h2{
+        font-size: 5vw;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .bio-text p{
+        font-size: 3vw;
+    }
+}
+
+/*Mobile phone and smaller*/
+@media screen and (max-width: 575px){
+
+
+}
