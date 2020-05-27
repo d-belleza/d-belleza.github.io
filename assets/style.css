@@ -14,18 +14,24 @@
     box-sizing: border-box;
 }
 
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
 /*Header Styling*/
 header{
     background-image: url("/assets/images/beach.png");
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
-    padding: 20px 35px;
+    padding: 15px 35px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     position: sticky;
     position: -webkit-sticky;
+    top: 0;
     z-index: 9999;
 }
 
@@ -57,13 +63,13 @@ header nav ul {
 header nav ul li a{
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-shadow: 0 0 20px rgba(250, 249, 249, 0.8);
 }
 
 header nav ul li a:hover{
     color: var(--white);
-    text-shadow: 0 0 50px rgba(85, 91, 110, 0.9);
+    text-shadow: 0 0 30px rgba(85, 91, 110, 0.9);
 
 }
 
@@ -104,12 +110,8 @@ footer h2{
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    margin-bottom: 5px;
 }
-.contacts ul li{
-    color: var(--white);
-    text-shadow: 0 0 10px rgba(85, 91, 110, 0.3);
-}
-
 
 .contacts ul li a{
     padding: 10px 15px;
@@ -139,12 +141,62 @@ footer h2{
 /*Body Styling*/
 main{
     padding: 60px;
-    background: var(--color1);
-}
-.work{
-    padding: 20%;
+    background: linear-gradient(to bottom, var(--white), var(--color1));
 }
 
-.contact-info{
-    padding: 20%;
+.section-title{
+    width: 40%;
+    color: var(--color3);
+}
+
+.section-border{
+    border-bottom: 3px solid var(--color3);
+}
+
+/*About Me Styling*/
+.bio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.bio-img{
+    width: 20%;
+    margin-left: 25%;
+}
+
+ .bio-text{
+    text-align: left;
+    width: 35%;
+    justify-content: flex-start;
+    margin-right: 15%;
+ }
+
+ .bio-text h2{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid;
+    font-size: 2vw;
+ }
+
+ .bio-text p{
+    color: var(--color2);
+    padding: 10px 0;
+ }
+
+ /*Work Styling*/
+.work{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work h2{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid;
 }
