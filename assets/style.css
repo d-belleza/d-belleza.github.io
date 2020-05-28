@@ -138,19 +138,47 @@ footer h2{
 
 }
 
-/*Body Styling*/
+/*Main Body Styling*/
 main{
     padding: 60px;
     background: linear-gradient(to bottom, var(--white), var(--color1));
 }
 
-.section-title{
-    width: 40%;
+main h2{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--color3);
+    font-size: 2vw;
     color: var(--color3);
 }
 
-.section-border{
-    border-bottom: 3px solid var(--color3);
+ /*Work Styling*/
+ .portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 2% auto;
+}
+
+.portfolio h2{
+    width: 80%;
+    text-align: center;
+}
+
+.deployments{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.deployment{
+    margin: 20px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    flex: 1;
 }
 
 /*About Me Styling*/
@@ -173,33 +201,10 @@ main{
     margin-right: 15%;
  }
 
- .bio-text h2{
-    margin-right: 20px;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 3px solid;
-    font-size: 2vw;
- }
-
  .bio-text p{
     color: var(--color2);
     padding: 10px 0;
  }
-
- /*Work Styling*/
-.work{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.work h2{
-    margin-right: 20px;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 3px solid;
-}
 
 /*MEDIA QUERIES*/
 
@@ -238,6 +243,13 @@ main{
 
 /*Tablet and smaller*/
 @media screen and (max-width: 768px){
+    main h2{
+        font-size: 5vw;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
     .bio{
         display: block;
         margin: 0;
@@ -253,15 +265,12 @@ main{
         width: 100%;
     }
 
-    .bio-text h2{
-        font-size: 5vw;
-        text-align: center;
-        margin: 0 auto;
-        width: 100%;
-    }
-
     .bio-text p{
         font-size: 3vw;
+    }
+
+    .portfolio{
+        width: 100%;
     }
 }
 
