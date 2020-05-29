@@ -86,46 +86,12 @@ header nav ul li a:hover{
 
 /*Footer Styling*/
 footer{
+    padding: 2%;
     background: linear-gradient(to bottom, var(--sand), var(--brown));
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px 35px;
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    flex-wrap: wrap;
-    font-size: 20px;
 }
 
-footer h2{
-    text-align: center;
-    color: var(--light-blue);
-    margin: 0 auto 35px auto;
-    padding-bottom: 15px;
-    border-bottom: 3px solid var(--grey);
-    width: 30%;
-    text-shadow: 0 0 10px rgba(85, 91, 110, 0.9);
-}
-
-.contacts{
-    margin: 7px 0;
-}
-
-.contacts a{
+footer h3{
     color: var(--white);
-}
-
-.contacts ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    margin-bottom: 5px;
-}
-
-.contacts ul li a{
-    padding: 10px 15px;
     font-weight: lighter;
 }
 
@@ -152,7 +118,6 @@ footer h2{
 
 /*Main Body Styling*/
 main{
-    padding: 2%;
     background: linear-gradient(to bottom, var(--white), var(--sand));
 }
 
@@ -245,16 +210,16 @@ main h2{
     background-image: url("../assets/images/horiseon.png");
 }
 .dply-3{
-    background-image: url("https://via.placeholder.com/200?text=Future+Project");
+    background-image: url("https://picsum.photos/id/1018/500/500?blur=1");
 }
 .dply-4{
-    background-image: url("https://via.placeholder.com/200?text=Future+Project");
+    background-image: url("https://picsum.photos/id/1033/500/500?blur=1");
 }
 .dply-5{
-    background-image: url("https://via.placeholder.com/200?text=Future+Project");
+    background-image: url("https://picsum.photos/id/1081/500/500?blur=1");
 }
 .dply-6{
-    background-image: url("https://via.placeholder.com/200?text=Future+Project");
+    background-image: url("https://picsum.photos/id/1053/1200/200?blur=1");
 }
 
 .deployment-img{
@@ -320,6 +285,7 @@ main h2{
 
 /*About Me Styling*/
 .bio{
+    margin: 5% 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -342,6 +308,50 @@ main h2{
     color: var(--grey);
     padding: 10px 0;
  }
+
+/*Contact Styling*/
+#contact-info{
+    width: 100%;
+    margin-top: 4%;
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#contact-info h2{
+    font-size: large;
+    text-align: center;
+    color: var(--grey);
+    margin: 0 auto 35px auto;
+    padding-bottom: 15px;
+    border-bottom: 3px solid var(--light-blue);
+    width: 30%;
+}
+
+.contacts{
+    margin: 7px 0;
+}
+
+.contacts a{
+    color: var(--grey);
+}
+
+.contacts ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.contacts ul li a{
+    padding: 10px 15px;
+    font-weight: 400;
+    font-size: medium;
+}
 
 /*MEDIA QUERIES*/
 
