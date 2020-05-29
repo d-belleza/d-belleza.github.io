@@ -1,10 +1,10 @@
 /*Color variables*/
 :root{
-    --light-blue: #a9cbd9; /*(255,214,186)*/
-    --grey:#60758d; /*(85,91,110)*/
-    --sand: #d9c8b4; /*(137,176,174)*/
-    --orange: #f2ae72; /*(190,227,219)*/
-    --brown: #40332e;
+    --light-blue: #a9cbd9; /*(169,203,217)*/
+    --grey:#60758d; /*(96,117,141)*/
+    --sand: #d9c8b4; /*(217,200,180)*/
+    --orange: #f2ae72; /*(242,174,114)*/
+    --brown: #40332e; /*(64,51,46)*/
     --white: #FAF9F9; /*(250,249,249)*/
 }
 /*Universal Styling*/
@@ -22,7 +22,7 @@ img{
 
 /*Header Styling*/
 header{
-    background-image: url("/assets/images/beach.png");
+    background-image: url("../assets/images/beach.png");
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
@@ -40,7 +40,7 @@ header h1{
     font-weight: bold;
     font-size: 36px;
     color: var(--white);
-    margin: 0;
+    margin: auto 0;
     text-shadow: 0 0 10px rgba(85, 91, 110, 0.5);
 }
 
@@ -60,7 +60,7 @@ header a{
 }
 
 header nav{
-    margin: 7px 0;
+    margin: auto 0;
 }
 
 header nav ul {
@@ -166,7 +166,7 @@ main h2{
 }
 
  /*Work Styling*/
- .portfolio{
+.portfolio{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -184,8 +184,12 @@ main h2{
 .portfolio a{
     height: 40vh;
     background-color: rgba(85,91,110,0.8);
+    text-decoration: none;
+    color: var(--white);
+    text-shadow: 0 0 5px rgba(85, 91, 110, 0.7);
 }
 
+/*Work Grid*/
 .container{
     width: 75%;
     display: grid;
@@ -201,34 +205,29 @@ main h2{
     background: var(--secondary-color);
     color: var(--primary-color);
 }
-
 .deployment{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
+    box-shadow: 0 0 20px rgba(85, 91, 110, 0.4);
 }
-
 .d1{
     grid-column: 1 / span 3;
     grid-row: 1 / span 2;
 }
-
 .d2{
     grid-column: 4 / span 3;
     grid-row: 1 / span 2;
 }
-
 .d3{
     grid-column: 1 / span 2;
     grid-row: 3 / span 2;
 }
-
 .d4{
     grid-column: 3 / span 2;
     grid-row: 3 / span 2;
 }
-
 .d5{
     grid-column: 5 / span 2;
     grid-row: 3 / span 2;
@@ -236,6 +235,87 @@ main h2{
 .d6{
     grid-column: 1 / span 6;
     grid-row: 5 / span 2;
+}
+/*Grid end*/
+
+.dply-1{
+    background-image: url("../assets/images/run-buddy.png");
+}
+.dply-2{
+    background-image: url("../assets/images/horiseon.png");
+}
+.dply-3{
+    background-image: url("https://via.placeholder.com/200?text=Future+Project");
+}
+.dply-4{
+    background-image: url("https://via.placeholder.com/200?text=Future+Project");
+}
+.dply-5{
+    background-image: url("https://via.placeholder.com/200?text=Future+Project");
+}
+.dply-6{
+    background-image: url("https://via.placeholder.com/200?text=Future+Project");
+}
+
+.deployment-img{
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+.deployment-img h3{
+    position: relative;
+    z-index: 1;
+    font-size: 28px;
+    margin-bottom: 5px;
+    top: 200px;
+    transition: 0.5s;
+}
+
+.deployment-img h4{
+    position: relative;
+    z-index: 1;
+    font-size: 22px;
+    top: 200px;
+    transition: 0.5s;
+}
+
+.deployment-img::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(169,203,217, 0.5);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(169,203,217, 0.5), var(--orange));
+    transition: 0.5s;
+}
+
+.deployment:hover .deployment-img::after{
+    opacity: 1;
+}
+
+.deployment:hover .deployment-img h3, .deployment:hover .deployment-img h4{
+    top: 0px;
+}
+
+.deployment-mobile h3{
+    font-size: 28px;
+    display: none;
+}
+
+.deployment-mobile h4{
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15px;
+    display: none;
 }
 
 /*About Me Styling*/
