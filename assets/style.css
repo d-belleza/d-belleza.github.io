@@ -259,7 +259,7 @@ main h2{
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(rgba(169,203,217, 0.5), var(--orange));
+    background: linear-gradient(rgba(169,203,217, 0.5), var(--grey));
     transition: 0.5s;
 }
 
