@@ -162,7 +162,6 @@ main h2{
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 20px;
-    grid-row-gap: 180px;
     grid-auto-flow: dense;
     
 }
@@ -174,12 +173,12 @@ main h2{
     color: var(--primary-color);
 }
 .deployment{
+    height: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
     box-shadow: 0 0 20px rgba(85, 91, 110, 0.4);
-    flex: 1;
 }
 .d1{
     grid-column: 1 / span 3;
@@ -412,10 +411,14 @@ main h2{
     /*Work Styling*/
     .portfolio{
         padding-bottom: 15%;
+    }
 
+    .container{
+        grid-row-gap: 180px;
     }
     .deployment{
         background-color: var(--brown);
+        height: 536px;
     }
 
     .deployment-mobile{
@@ -426,7 +429,7 @@ main h2{
     }
     
     .deployment-mobile h3{
-        font-size: 28px;
+        font-size: 26px;
         display: none;
     }
     
@@ -479,6 +482,7 @@ main h2{
         margin: 2% auto;
         padding-bottom: 0;
     }
+    
     /*Grid Styling*/
     .container{
         display: block;
@@ -487,6 +491,6 @@ main h2{
 
     .deployment{
         margin: 5% auto;
+        height: 440px;
     }
-
 }
