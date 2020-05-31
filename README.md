@@ -10,4 +10,4 @@ The website has been optimized to be responsive on multiple viewports including:
 ## Deployment:
 [d-belleza.github.io](https://d-belleza.github.io/)
 
-![Application Screenshot](../screenshot.png "Screenshot")
+![Application Screenshot](screenshot.png "Screenshot")
