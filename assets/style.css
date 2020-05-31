@@ -444,9 +444,6 @@ main h2{
     .deployment-mobile h3, .deployment-mobile h4{
         display: block;
     }
-
-    /*Grid Styling*/
-
     
     /*About Me Styling*/
     .bio{
@@ -477,6 +474,19 @@ main h2{
 
 /*Mobile phone and smaller*/
 @media screen and (max-width: 575px){
+    /*Work Styling*/
+    .portfolio{
+        margin: 2% auto;
+        padding-bottom: 0;
+    }
+    /*Grid Styling*/
+    .container{
+        display: block;
+        margin: 2% auto;
+    }
 
+    .deployment{
+        margin: 5% auto;
+    }
 
 }
