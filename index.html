@@ -4,187 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" type="image/png" href="/assets/images/dbicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="/assets/styling.css">
     <title>David Belleza Portfolio</title>
 </head>
 <body>
     <!--navigation-->
-    <header>
-        <h1>davi<span>db</span>elleza</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#work">WORK</a>
+    <nav class="navbar navbar-expand-lg nav-bar-light p-3">
+        <a class="navbar-brand" href="#">
+            <h1>davi<span id="logo">db</span>elleza</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-color">
+                <li class="nav-item">
+                    <a class="nav-link" href="#slideshow">WORK</a>
                 </li>
-                <li>
-                    <a href="#about-me">ABOUT</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-me">ABOUT</a>
                 </li>
-                <li>
-                    <a href="#contact-info">CONTACT</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacts">CONTACT</a>
                 </li>
-                <li>
-                    <a href="/assets/D_Belleza_Resume.pdf" target="_blank">RESUME</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="/assets/D_Belleza_Resume.pdf" target="_blank">RESUME</a>
                 </li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <!--hero-->
-    <section class="hero">
-    </section>
+    <!--jumbotron hero-->
+    <div class="jumbotron jumbotron-fluid p-0">
+        <section class="hero">
+        </section>
+    </div>
 
-    <!--Content-->
+    <!--main-->
     <main>
-        <!--Work-->
-        <section id="work" class="portfolio">
-            <h2>WORK</h2>
-            <div class="container">
-                <a href="https://d-belleza.github.io/run-buddy" target="_blank" class="d1">
-                    <article class="deployment">
-                        <div class="deployment-img dply-1">
-                            <div>
-                                <h3>Run Buddy</h3>
-                                <h4>HTML/CSS</h4>
+        <div class="container">
+            <div class="row p-4" >
+                <div class="col-12" id="slideshow">
+                    <div class="slick">
+                        <div>
+                            <div class="card">
+                                <img src="./assets/images/d-bellezarun-buddy_.png" class="card-img-top img-fluid" alt="Run Buddy">
+                                <div class="card-body">
+                                    <p class="h4">Run Buddy</p>
+                                    <p class="h6">HTML/CSS</p>
+                                    <a href="http://d-belleza.github.io/run-buddy" class="card-link stretched-link h5" target="_blank"></a>
+                                </div>
                             </div>
                         </div>
-                        <div class="deployment-mobile">
-                            <div>
-                                <h3>Run Buddy</h3>
-                                <h4>HTML/CSS</h4>
+                        <div>
+                            <div class="card">
+                                <img src="./assets/images/weathersc.png" class="card-img-top img-fluid" alt="Weather Dashboard">
+                                <div class="card-body">
+                                    <p class="h4">Weather Dashboard</p>
+                                    <p class="h6">Open Weather Map API</p>
+                                    <a href="http://d-belleza.github.io/weather-dashboard" class="card-link stretched-link h5" target="_blank"></a>
+                                </div>
                             </div>
                         </div>
-                    </article>
-                </a>
-
-                <a href="https://d-belleza.github.io/Horiseon" target="_blank" class="d2">
-                    <article class="deployment">
-                        <div class="deployment-img dply-2">
-                            <div>
-                                <h3>Horiseon</h3>
-                                <h4>HTML/CSS</h4>       
+                        <div>
+                            <div class="card">
+                                <img src="./assets/images/schedulersc.png" class="card-img-top img-fluid" alt="Workday Scheduler">
+                                <div class="card-body">
+                                    <p class="h4">Workday Scheduler</p>
+                                    <p class="h6">Bootstrap/jQuery</p>
+                                    <a href="http://d-belleza.github.io/workday-scheduler" class="card-link stretched-link h5" target="_blank"></a>
+                                </div>
                             </div>
                         </div>
-                        <div class="deployment-mobile">
-                            <div>
-                                <h3>Horiseon</h3>
-                                <h4>HTML/CSS</h4>       
+                        <div>
+                            <div class="card">
+                                <img src="./assets/images/all-data.png" class="card-img-top img-fluid" alt="COVID Travel Tracker">
+                                <div class="card-body">
+                                    <p class="h4">COVID Travel Tracker</p>
+                                    <p class="h6">Front End Development Project</p>
+                                    <a href="http://d-belleza.github.io/covid-traveling" class="card-link stretched-link h5" target="_blank"></a>
+                                </div>
                             </div>
                         </div>
-                    </article>
-                </a>
-                
-                <a href="https://d-belleza.github.io/password-generator" target="_blank" class="d3">
-                    <article class="deployment">
-                        <div class="deployment-img dply-3">
-                            <div>
-                                <h3>Password Generator</h3>
-                                <h4>JavaScript</h4>
+                        <div>
+                            <div class="card">
+                                <img src="./assets/images/passwordsc.png" class="card-img-top img-fluid" alt="Password Generator">
+                                <div class="card-body">
+                                    <p class="h4">Password Generator</p>
+                                    <p class="h6">JavaScript</p>
+                                    <a href="http://d-belleza.github.io/password-generator" class="card-link stretched-link h5" target="_blank"></a>
+                                </div>
                             </div>
                         </div>
-                        <div class="deployment-mobile">
-                            <div>
-                                <h3>Password Generator</h3>
-                                <h4>JavaScript</h4>
+                        <div>
+                            <div class="card">
+                                <img src="./assets/images/horiseon.png" class="card-img-top img-fluid" alt="Horiseon">
+                                <div class="card-body">
+                                    <p class="h4">Horiseon</p>
+                                    <p class="h6">HTML/CSS</p>
+                                    <a href="http://d-belleza.github.io/horiseon" class="card-link stretched-link h5" target="_blank"></a>
+                                </div>
                             </div>
                         </div>
-                    </article>
-                </a>
-
-                <a href="https://d-belleza.github.io/taskinator" target="_blank" class="d4">
-                    <article class="deployment">
-                        <div class="deployment-img dply-4">
-                            <div>
-                                <h3>Taskinator</h3>
-                                <h4>JavaScript</h4>
+                        <div>
+                            <div class="card">
+                                <img src="./assets/images/vrman.jpg" class="card-img-top img-fluid" alt="Horiseon">
+                                <div class="card-body">
+                                    <p class="h4">Mixed Reality Studio</p>
+                                    <p class="h6">Senior Design Project</p>
+                                    <a href="https://github.com/d-belleza/MxR-Embedded-System" class="card-link stretched-link h5" target="_blank"></a>
+                                </div>
                             </div>
                         </div>
-                        <div class="deployment-mobile">
-                            <div>
-                                <h3>Taskinator</h3>
-                                <h4>JavaScript</h4>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-
-                <a href="https://picsum.photos/id/1081/500/500?blur=1" target="_blank" class="d5">
-                    <article class="deployment">
-                        <div class="deployment-img dply-5">
-                            <div>
-                                <h3>Future Project</h3>
-                                <h4>JavaScript</h4>
-                            </div>
-                        </div>
-                        <div class="deployment-mobile">
-                            <div>
-                                <h3>Future Project</h3>
-                                <h4>JavaScript</h4>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-
-                <a href="https://github.com/d-belleza/MxR-Embedded-System" target="_blank" class="d6">
-                    <article class="deployment">
-                        <div class="deployment-img dply-6">
-                            <div>
-                                <h3>MxR - Mixed Reality Studio</h3>
-                                <h4>Senior Design Project</h4>
-                            </div>
-                        </div>
-                        <div class="deployment-mobile">
-                            <div>
-                                <h3>MxR - Mixed Reality Studio</h3>
-                                <h4>Senior Design Project</h4>
-                            </div>
-                        </div>
-                    </article>
-                </a>
+                    </div>
+                </div>
             </div>
-        </section>
-        <!--About Me-->
-        <section id="about-me" class="bio">
-            <div class="bio-img">
-                <img src="../assets/images/headshot.JPG" alt="Picture of me">
+            <div class="row pt-5 justify-content-center" id="about-me">
+                <div class="col-lg-6 col-md-12 justify-content-center">
+                    <img src="./assets/images/headshot.JPG" alt="" class="bio-img img-fluid">
+                </div>
+                <div class="col-lg-6 col-md-12 bio-text">
+                    <h2>ABOUT ME</h2>
+                    <p>
+                        My name is David Belleza and I am a Multidisciplined Engineer. As a Multidisciplined Engineer,
+                        many of my projects have focused on electromechanical and robotic systems. My skills and experience
+                        range from mechanical and electronic design to software and embedded system development.
+                    </p>
+                    <p>
+                        Currently, I am studying Full Stack Web Development to challenge myself and expand my professional toolbelt. Web Development allows me to combine my artistic talent and techical abilities.
+                        After receiving my certification, I hope to acquire the skills and knowledge to help me become well-rounded in both Engineering and Web Development. 
+                    </p>
+                </div>
             </div>
-            <div class="bio-text">
-                <h2>ABOUT ME</h2>
-                <p>
-                    My name is David Belleza and I am a Multidisciplined Engineer. As a Multidisciplined Engineer,
-                    many of my projects have focused on electromechanical and robotic systems. My skills and experience
-                    range from mechanical and electronic design to software and embedded system development.
-                </p>
-                <p>
-                    Currently, I am studying Full Stack Web Development to challenge myself and expand my professional toolbelt. Web Development allows me to combine my artistic talent and techical abilities.
-                    After receiving my certification, I hope to acquire the skills and knowledge to help me become well-rounded in both Engineering and Web Development. 
-                </p>
-            </div>
-        </section>
-
-        <section id="contact-info">
-            <div class="contacts">
-                <h2>CONTACT</h2>
-                <ul>
-                    <li>
-                        <a href="mailto:davidbelleza@gmail.com">davidbelleza@gmail.com</a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com/in/david-belleza">LinkedIn</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/d-belleza">Github</a>
-                    </li>
-                    <li>
-                        <a href="tel:713-515-0744">713-515-0744</a>
-                    </li>
-                </ul>
+            <div class="row py-5" id="contacts">
+                <div class="col-12 text-center">
+                    <h2>CONTACT</h2>
+                    <div class="row justify-content-center">
+                        <a href="mailto:davidbelleza@gmail.com" class="m-3 links">davidbelleza@gmail.com</a>
+                        <a href="tel:713-515-0744" class="m-3 links"> 713-515-0744</a>
+                    </div>
+                    <div class="row justify-content-center">
+                        <a href="https://linkedin.com/in/david-belleza" target="_blank" class="fa fa-linkedin m-3"></a>
+                        <a href="https://github.com/d-belleza" target="_blank" class="fa fa-github m-3"></a>
+                    </div>                
+                </div>
             </div>
 
-        </section>
+
+            <!--footer-->
+            <footer class="row">
+                <div class="col-12 text-center align-bottom">
+                    <p class="h6" id="copyright">
+                        <span>&copy;
+                            <script>document.write(new Date().getFullYear());</script>
+                            Copyright - David Belleza
+                        </span>
+                    </p>
+                </div>
+            </footer>
+        </div>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="/assets/script.js"></script>
 </body>
-<footer>
-    <h3>© 2020 Copyright David Belleza</h3>
-</footer>
 </html>
